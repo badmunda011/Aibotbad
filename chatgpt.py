@@ -140,7 +140,7 @@ async def cb_handler(Client, query: CallbackQuery):
                   reply_markup=InlineKeyboardMarkup(MAIN),
         )
     
-@Mukesh.on_message(filters.command(["help", f"help@{BOT_USERNAME}"], prefixes=["https://t.me/BAD_MUNDA_0"]))
+@Mukesh.on_message(filters.command(["help", f"help@{BOT_USERNAME}"], prefixes=["","+", ".", "/", "-", "?", "$"]))
 async def restart(client, message):
     hmm = await message.reply_photo(START_IMG,
                         caption=HELP_READ,
@@ -151,7 +151,7 @@ async def source(bot, m):
     
     await m.reply_photo(START_IMG, caption=SOURCE_TEXT, reply_markup=SOURCE_BUTTONS)
 #  alive
-@Mukesh.on_message(filters.command(["ping","alive"], prefixes=["https://t.me/BAD_MUNDA_0"]))
+@Mukesh.on_message(filters.command(["ping","alive"], prefixes=["+", "/", "-", "?", "$", "&","."]))
 async def ping(client, message: Message):
         start = datetime.now()
         t = "ριиgιиg..."
